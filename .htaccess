@@ -1,0 +1,39 @@
+# HTTPS
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Pres
+
+redirect 301 /bem		http://pepelsbey.net/pres/bem-ok/
+redirect 301 /bem-en	http://pepelsbey.net/pres/bem-ok/en/
+redirect 301 /bnx		http://pepelsbey.net/pres/browser-next/
+redirect 301 /cas		http://pepelsbey.net/pres/clear-and-sharp/
+redirect 301 /css		http://pepelsbey.net/pres/css-management/
+redirect 301 /doc		http://pepelsbey.net/pres/doctype/
+redirect 301 /dyn		http://pepelsbey.net/pres/dynamic-graphics/
+redirect 301 /fbx		http://pepelsbey.net/pres/flexbox-gotcha/
+redirect 301 /grl		http://pepelsbey.net/pres/grid-layout/
+redirect 301 /hud		http://pepelsbey.net/pres/houdini/
+redirect 301 /lbr		http://pepelsbey.net/pres/little-browsers/
+redirect 301 /dla		http://pepelsbey.net/pres/devs-laugh/
+redirect 301 /owk		http://pepelsbey.net/pres/opera-webkit/
+redirect 301 /pic		http://pepelsbey.net/pres/picture/
+redirect 301 /pre		http://pepelsbey.net/pres/pre-fixes/
+redirect 301 /pro		http://pepelsbey.net/pres/procrustes/
+redirect 301 /pit		http://pepelsbey.net/pres/push-it/
+redirect 301 /sen		http://pepelsbey.net/pres/sense-coding/
+redirect 301 /tea		http://pepelsbey.net/pres/special-effects-tea/
+redirect 301 /cur		http://pepelsbey.net/pres/web-in-curves/
+redirect 301 /wap		http://pepelsbey.net/pres/web-apps/
+redirect 301 /wap-en	http://pepelsbey.net/pres/web-apps/en/
+
+# WST
+
+redirect 301 /wst		http://web-standards.ru/
+redirect 301 /wsd		http://webstandardsdays.ru/
+
+# Error
+
+ErrorDocument 404		http://pepelsbey.net/

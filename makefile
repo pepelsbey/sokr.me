@@ -1,4 +1,4 @@
 publish:
 	@echo 'Uploading files…'
-	@rsync -az .htaccess index.html pepelsbey@pepelsbey.net:sokr.me/
+	@rsync -az index.html pepelsbey@46.101.148.11:/var/www/sokr.me/html/
 	@echo 'Done.'
